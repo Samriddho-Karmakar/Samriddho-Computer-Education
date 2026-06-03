@@ -1,0 +1,11 @@
+{
+  "name": "samriddho-computer-education",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Cloudflare Pages + D1 version of the Samriddho Computer Education website",
+  "scripts": {
+    "dev": "npx wrangler pages dev public",
+    "deploy": "npx wrangler pages deploy public",
+    "db:migrate": "npx wrangler d1 migrations apply sce-db --remote"
+  }
+}
