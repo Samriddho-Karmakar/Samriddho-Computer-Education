@@ -36,7 +36,7 @@
   <section class="search-section">
     <div class="container">
       <form id="studentSearch">
-        <input type="text" id="enrollmentId" placeholder="Enter Enrollment ID (e.g., SCE001)" required>
+        <input type="text" id="enrollmentId" placeholder="Enter Enrollment ID" required>
         <button type="submit">Search</button>
       </form>
     </div>
@@ -56,5 +56,27 @@
     </div>
   </footer>
   <script src="/js/script.js"></script>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    if (!id) return;
+
+    const input = document.getElementById("enrollmentId");
+    const form = document.getElementById("studentSearch");
+
+    if (!input || !form) return;
+
+    input.value = id;
+
+    form.dispatchEvent(
+        new SubmitEvent("submit", {
+            bubbles: true,
+            cancelable: true
+        })
+    );
+});
+</script>
 </body>
 </html>
