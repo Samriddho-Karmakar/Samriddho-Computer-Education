@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /teacher
+Disallow: /teacher-login
+
+Sitemap: https://samriddhocomputereducation.pages.dev/sitemap.xml
