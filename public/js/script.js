@@ -316,6 +316,6 @@ document.querySelectorAll('.card, .stat-card, .course-card, .project-card, .app-
 loadHomePage();
 loadCoursesPage();
 loadProjectsPage();
-loadContactInfo();
+// loadContactInfo();
 
 console.log('✓ Script loaded successfully');
