@@ -51,15 +51,15 @@ async function run(db, sql, bindings = []) {
 function defaultInstituteInfo() {
   return {
     institute_name: 'Samriddho Computer Education',
-    phone: '+919874635598',
-    email: 'mithu9874635598@gmail.com',
+    phone: '+91 98746 35598',
+    email: 'contact.sceacademy@gmail.com',
     whatsapp: 'http://wa.me/919874635598',
     teacher_name: 'Mithu Karmakar',
     teacher_image: 'maa.jpeg',
-    address: 'Samriddho Computer Education, Kolkata',
+    address: 'Samriddho Computer Education, Kolkata 700102',
     latitude: 22.595896,
     longitude: 88.431042,
-    approved_tag: 'Indian government approved computer training center',
+    approved_tag: 'Indian Government Approved Computer Training Center',
   };
 }
 
