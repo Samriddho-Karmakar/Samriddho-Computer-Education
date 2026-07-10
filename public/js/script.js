@@ -174,7 +174,7 @@ async function loadHomePage() {
 
     if (statsGrid) {
       statsGrid.innerHTML = `
-        <div class="stat-card"><h3>${data.stats.total_students || 0}+</h3><p>Active Students</p></div>
+        <div class="stat-card"><h3>${Math.floor((data.stats.total_students || 0)/5)*5}+</h3><p>Active Students</p></div>
         <div class="stat-card"><h3>${data.stats.total_courses || 0}+</h3><p>Courses Offered</p></div>
         <div class="stat-card"><h3>${data.stats.total_projects || 0}+</h3><p>Student Projects</p></div>
         <div class="stat-card"><h3>100%</h3><p>Satisfaction Rate</p></div>
